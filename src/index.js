@@ -1,19 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
 
-const ViewBoxesWithColorAndText = () => {
-  return (
-    
-    <View
-      style={{
-        flex:1,
-        alignItems:'center',
-        justifyContent:'center',
-      }}
-    >
-     <Text>drexy</Text>
-    </View>
-  );
-};
+import Navigation from './Navigation';
 
-export default ViewBoxesWithColorAndText;
+export default function App() {
+    return (
+        <NavigationContainer>
+            <Navigation />
+        </NavigationContainer>
+
+    );
+}
